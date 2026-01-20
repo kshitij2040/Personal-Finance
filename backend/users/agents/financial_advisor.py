@@ -148,8 +148,8 @@ For investments:
 
 def create_financial_advisor_agent():
     """Create and configure the financial advisor agent"""
-    # Create Gemini model with API key
-    model = GeminiModel('gemini-1.5-flash', api_key=settings.GEMINI_API_KEY)
+    # Create Gemini model with API key - using 2.0 flash for better availability
+    model = GeminiModel('gemini-2.0-flash-exp', api_key=settings.GEMINI_API_KEY)
     
     # Create agent with the model
     agent = Agent(
